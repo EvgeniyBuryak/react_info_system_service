@@ -1,0 +1,45 @@
+{
+  "name": "info_system_service",
+  "version": "0.0.1",
+  "description": "test SPA for info_system_service",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve -c config/webpack/dev.js",
+    "build": "webpack -c config/webpack/prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvgeniyBuryak/react_info_system_service.git"
+  },
+  "author": "Evgeniy Buryak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EvgeniyBuryak/react_info_system_service/issues"
+  },
+  "homepage": "https://github.com/EvgeniyBuryak/react_info_system_service#readme",
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "immer": "^9.0.12",
+    "mini-css-extract-plugin": "^2.6.0",
+    "nanoid": "^3.3.2",
+    "postcss-loader": "^6.2.1",
+    "prop-types": "^15.8.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.27.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
+}
