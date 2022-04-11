@@ -1,10 +1,15 @@
 import React from "react";
-import Header from "../views/header/header.view";
+import HeaderView from "./views/header/header.view";
+import styled from "styled-components";
+
+const sdf = styled.div`
+
+`
 
 const HomeScreen = () => {
     return (
         <div>
-            <Header />
+            <HeaderView />
         </div>
     );
 }
