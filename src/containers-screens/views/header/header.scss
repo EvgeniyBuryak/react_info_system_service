@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Roboto-Black', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 0.05em;
+    color: #0D5ADC;
+
+    &__sravnenie {
+        font-size: 12px;
+        line-height: 14.06px;
+        letter-spacing: 0;
+        color: #3B4157;
+    }
+
+    &__cabinet {
+        font-size: 12px;
+        line-height: 14.06px;
+        letter-spacing: 0.02em;
+        color: #3B4157;
+
+    }
+}

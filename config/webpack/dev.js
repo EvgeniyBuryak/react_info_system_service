@@ -14,6 +14,7 @@ module.exports = merge(base, {
       contentBase: paths.dist,
       // static: './',
       // historyApiFallback: true,
+      // hot: Включает автоматическую перезагрузку страницы при изменениях
       hot: true, // refresh the page after the changed
       open: true,
       port: 3000,

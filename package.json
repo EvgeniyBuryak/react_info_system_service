@@ -17,29 +17,32 @@
     "url": "https://github.com/EvgeniyBuryak/react_info_system_service/issues"
   },
   "homepage": "https://github.com/EvgeniyBuryak/react_info_system_service#readme",
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.4",
-    "css-loader": "^6.7.1",
+    "css-loader": "^5.1.3",
     "file-loader": "^6.2.0",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "immer": "^9.0.12",
     "mini-css-extract-plugin": "^2.6.0",
     "nanoid": "^3.3.2",
+    "postcss": "^8.4.5",
     "postcss-loader": "^6.2.1",
     "prop-types": "^15.8.1",
-    "sass-loader": "^12.6.0",
-    "style-loader": "^3.3.1",
+    "sass": "^1.14.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.27.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.5"
   }
 }

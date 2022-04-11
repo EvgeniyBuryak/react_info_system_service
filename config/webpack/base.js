@@ -8,7 +8,9 @@ module.exports = {
     filename: 'js/[name].bundle.js',
     path: paths.dist,
     publicPath: '/',
-    clean: true,
+    clean: true, // Очищает директорию dist перед обновлением бандла
+    // Свойство стало доступно с версии 5.20.0, до этого использовался
+    // CleanWebpackPlugin
     // module: true,
   },
   //Rules of how webpack will take our files, complie & bundle them for the browser 
@@ -24,7 +26,8 @@ module.exports = {
       },
       // CSS, PostCSS, Sass
       {
-        test: /\.(scss|css)$/,
+        // test: /\.(scss|css)$/,
+        test: /\.(s[ac]|c)ss$/i, // /\.(le|c)ss$/i если вы используете less
         use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       // HTML

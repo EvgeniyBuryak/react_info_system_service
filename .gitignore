@@ -51,3 +51,7 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+
+# Save images for work perfect pixel
+# В этот папке будут хранится образцы для pixel perfect
+perfect_pixel/
