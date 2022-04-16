@@ -1,18 +1,29 @@
 {
-    "presets": [
-        [
-            "@babel/preset-env",
-            /** 
-            * corejs for solution problem with error below
-            * ReferenceError: regeneratorRuntime is not defined 
-            */
-            {
-                "useBuiltIns": "usage",
-                "corejs": 3
-            }
-        ],
-        [
-            "@babel/preset-react"
-        ]
-    ]
+    "env": {
+        "development": {
+            "plugins": [
+                ["babel-plugin-styled-components"]
+                // ["styled-components"]
+            ],
+            "presets": [            
+                [
+                    "@babel/preset-env",
+                    /** 
+                    * corejs for solution problem with error below
+                    * ReferenceError: regeneratorRuntime is not defined 
+                    */
+                    {
+                        "useBuiltIns": "usage",
+                        "corejs": 3
+                    }
+                ],
+                [
+                    "@babel/preset-react"
+                ]
+            ]
+        }
+    }
+    // "plugins": [        
+    //     "babel-plugin-styled-components"
+    // ]
 }
