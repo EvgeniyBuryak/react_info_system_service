@@ -1,5 +1,6 @@
 // @import 'utils/vars';
 // @import 'utils/fonts';
+import fontRoboto from './utils/fonts';
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`

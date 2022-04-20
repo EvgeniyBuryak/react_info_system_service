@@ -42,6 +42,11 @@ module.exports = {
         // изображения размером до 8кб будут инлайнится в код
         // В режиме разработки все изображения будут помещаться в dist/assets
       },
+      // fonts and SVG
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: 'asset/inline',
+      },
     ]
   },
   plugins: [

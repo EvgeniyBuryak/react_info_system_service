@@ -1,10 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-// const pathInfo = request.getPathInfo();
-// import iconImage from '../../../../assets/images/Vector.png';
-// import iconImage from './src/assets/images/Vector.png';
 import iconImage from './assets/images/Vector.png';
-
 
 const Header = styled.header`
     display: flex;
@@ -25,9 +21,11 @@ const Title = styled.div`
 const RightPartOfHeader = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
 `
 
 const fontStyles = css`
+    ${'' /* font-family: 'Roboto-Black', sans-serif; */}
     font-size: 12px;
     line-height: 14.06px;
     color: #3B4157;
@@ -47,7 +45,8 @@ const CabinetTitle = styled(Title)`
 `
 
 const IconAvatar = styled.div`
-    width: 20px;    
+    width: 20px;
+    height: 20.02px;
     background-image: url(${iconImage});
 `
 
@@ -56,9 +55,9 @@ const HeaderView = () => {
         <Header>
             <Title>Каталог</Title>
             <RightPartOfHeader>
-                <ComparisonTitle>СРАВНЕНИЕ</ComparisonTitle>
+                <ComparisonTitle>СРАВНЕНИЕ</ComparisonTitle>                
                 <CabinetTitle>Личный кабинет</CabinetTitle>
-                <IconAvatar>213</IconAvatar>
+                <IconAvatar />
             </RightPartOfHeader>
         </Header>
     );
