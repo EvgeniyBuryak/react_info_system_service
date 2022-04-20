@@ -1,10 +1,16 @@
 import React from "react";
 import styled, { css } from "styled-components";
+// const pathInfo = request.getPathInfo();
+// import iconImage from '../../../../assets/images/Vector.png';
+// import iconImage from './src/assets/images/Vector.png';
+import iconImage from './assets/images/Vector.png';
+
 
 const Header = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 101px;
 `
 
 const Title = styled.div`
@@ -14,6 +20,11 @@ const Title = styled.div`
     line-height: 21.09px;
     letter-spacing: 0.05em;
     color: #0D5ADC;
+`
+
+const RightPartOfHeader = styled.div`
+    display: flex;
+    justify-content: space-between;
 `
 
 const fontStyles = css`
@@ -30,14 +41,25 @@ const ComparisonTitle = styled(Title)`
 const CabinetTitle = styled(Title)`
     letter-spacing: 0.02em;
     ${fontStyles}
+
+    margin-left: 48px;
+    padding-right: 19px;        
+`
+
+const IconAvatar = styled.div`
+    width: 20px;    
+    background-image: url(${iconImage});
 `
 
 const HeaderView = () => {
     return (
         <Header>
             <Title>Каталог</Title>
-            <ComparisonTitle>СРАВНЕНИЕ</ComparisonTitle>
-            <CabinetTitle>Личный кабинет</CabinetTitle>         
+            <RightPartOfHeader>
+                <ComparisonTitle>СРАВНЕНИЕ</ComparisonTitle>
+                <CabinetTitle>Личный кабинет</CabinetTitle>
+                <IconAvatar>213</IconAvatar>
+            </RightPartOfHeader>
         </Header>
     );
 }

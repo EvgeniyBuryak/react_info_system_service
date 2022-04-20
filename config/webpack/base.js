@@ -35,6 +35,13 @@ module.exports = {
         test: /\.(html)$/,
         use: ['html-loader']
       },
+      // images
+      {
+        test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
+        type: 'asset/resource',
+        // изображения размером до 8кб будут инлайнится в код
+        // В режиме разработки все изображения будут помещаться в dist/assets
+      },
     ]
   },
   plugins: [
