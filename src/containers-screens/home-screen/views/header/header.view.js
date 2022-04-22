@@ -6,12 +6,12 @@ const Header = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 101px;
+    ${'' /* 101 */}
+    height: 100px; 
 `
 
 const Title = styled.div`
-    font-family: 'Roboto-Black', sans-serif;
-    font-weight: 900;
+    font-family: 'Roboto-Black', sans-serif;    
     font-size: 18px;
     line-height: 21.09px;
     letter-spacing: 0.05em;

@@ -8,22 +8,16 @@ import GlobalStyles from './assets/styles/main';
 // import standart theme
 import { baseTheme } from "./assets/styles/utils/baseTheme";
 
-const Wrapper = styled.div`
-    width                   : 77vw;
-    margin                  : 0 auto;
-
-    @media screen and (max-width: $smDesktopWidth) {
-        width               : 90vw;
-    }
-`;
+// const Wrapper = styled.div`
+//     width                   : 77vw;
+//     margin                  : 0 auto;
+// `;
 
 const App = () => {
     return (
-        <ThemeProvider theme={baseTheme}>
-            <Wrapper>
-                <GlobalStyles />
-                <HomeScreen />
-            </Wrapper>
+        <ThemeProvider theme={baseTheme}>            
+            <GlobalStyles />
+            <HomeScreen />            
         </ThemeProvider>
     );
 }
