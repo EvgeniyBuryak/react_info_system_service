@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import TemplateMobile from "./views/template-mobile.view.jsx";
 
 const ContentWrapper = styled.div`
     margin-top: 63px;
@@ -93,6 +94,7 @@ const MobilesView = () => {
             <Title>Смартфоны</Title>
             <CustomCheckbox type="checkbox" id="show-differences" name="show-differences" value="no" />
             <Label htmlRor="show-differences">Показать различия</Label>
+            <TemplateMobile />
         </ContentWrapper>
     );
 }
